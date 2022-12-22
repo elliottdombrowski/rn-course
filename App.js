@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { 
-  StyleSheet, 
-  Text, 
-  TextInput, 
-  View, 
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
   Button,
   ScrollView,
   FlatList,
