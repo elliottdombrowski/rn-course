@@ -6,6 +6,7 @@ import {
   Button,
   Modal,
   Image,
+  Pressable
 } from 'react-native';
 
 const GoalInput = (props) => {
@@ -24,7 +25,9 @@ const GoalInput = (props) => {
     <Modal 
       visible={props.visible} 
       animationType="slide"
+      transparent={true}
     >
+      <Pressable style={styles.dummyButton} onPress={props.onCancel}></Pressable>
       <View style={styles.inputContainer}>
         <Image 
           style={styles.image}
@@ -54,12 +57,17 @@ const GoalInput = (props) => {
 export default GoalInput;
 
 const styles = StyleSheet.create({
+  dummyButton: {
+    height: '50%',
+  },
   inputContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 16,
     backgroundColor: '#311b6b',
+    padding: 16,
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
   },
   image: {
     width: 100,
