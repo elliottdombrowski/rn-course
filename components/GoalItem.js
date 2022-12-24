@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   pressedItem: {
-    color: '#210644'
+    backgroundColor: '#210644'
   },
 });
